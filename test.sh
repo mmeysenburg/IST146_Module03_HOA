@@ -1,2 +1,2 @@
-javac -classpath .:./jars/*:/run_dir/junit-4.12.jar:/run_dir/hamcrest-core-1.3.jar:/run_dir/json-simple-1.1.1.jar -d . *.java 
-java -classpath .:./jars/*:/run_dir/junit-4.12.jar:/run_dir/hamcrest-core-1.3.jar:/run_dir/json-simple-1.1.1.jar BookStoreTest
+javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')
+java -classpath .:target/dependency/* BookStoreTest
